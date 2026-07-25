@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competition Registration | Red Rose Sr. Sec. School</title>
+    <meta name="description" content="Register for school competitions and showcase your talent. Students can register for various competitions with prizes.">
+    <meta name="keywords" content="competition, registration, contest, students, prizes, talent">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <button id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <a href="https://wa.me/919876543210" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <div id="loader"><div class="loader-circle"></div></div>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-left">
+                    <span><i class="fa-solid fa-phone"></i> +91 9876543210</span>
+                    <span><i class="fa-solid fa-envelope"></i> info@redroseschool.com</span>
+                </div>
+                <div class="top-right">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="assets/images/logo/logo.jpg" alt="Red Rose School Logo"></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="teachers.html">Teachers</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="admissions.html" class="admission-btn">Admission</a>
+                </div>
+                <div class="menu-btn" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </nav>
+
+        <div class="mobile-sidebar">
+            <div class="close-btn" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admissions.html">Admission</a></li>
+            </ul>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Student Competition Registration</h1>
+                <p>Showcase your talent and compete for amazing prizes</p>
+            </div>
+        </section>
+
+        <section class="competition-section">
+            <div class="container">
+                <div class="competition-info">
+                    <h2>Inter-School Olympiad 2026</h2>
+                    <div class="info-grid">
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-flag"></i> About Competition</h4>
+                            <p>The Inter-School Olympiad is a prestigious competition where students from various schools compete in academic and technical subjects to showcase their excellence.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-users"></i> Eligibility</h4>
+                            <p>All students from Class 6 to Class 12 are eligible. Students must be regular attendees with no disciplinary issues.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-scroll"></i> Rules</h4>
+                            <p>1. Each participant must register individually. 2. Registration fee required. 3. On-time appearance mandatory. 4. Fair conduct expected.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-calendar"></i> Last Date</h4>
+                            <p>Registration closes on <strong>August 15, 2026</strong>. Late registrations will not be accepted.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-trophy"></i> Prizes</h4>
+                            <p>1st Place: Cash Prize + Trophy | 2nd Place: Cash Prize + Certificate | 3rd Place: Certificate | All participants get participation medal.</p>
+                        </div>
+                        <div class="info-box">
+                            <h4><i class="fa-solid fa-star"></i> Categories</h4>
+                            <p>Mathematics | Science | English | Hindi | Social Studies | General Knowledge | Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="registration-form-wrapper">
+                    <h3>Student Registration Form</h3>
+                    <form class="registration-form" id="competitionForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentName">Student Name *</label>
+                                <input type="text" id="studentName" name="studentName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fatherName">Father's Name *</label>
+                                <input type="text" id="fatherName" name="fatherName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="studentClass">Class *</label>
+                                <select id="studentClass" name="studentClass" required>
+                                    <option value="">Select Class</option>
+                                    <option>Class 6</option>
+                                    <option>Class 7</option>
+                                    <option>Class 8</option>
+                                    <option>Class 9</option>
+                                    <option>Class 10</option>
+                                    <option>Class 11</option>
+                                    <option>Class 12</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="section">Section *</label>
+                                <select id="section" name="section" required>
+                                    <option value="">Select Section</option>
+                                    <option>A</option>
+                                    <option>B</option>
+                                    <option>C</option>
+                                    <option>D</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="mobileNumber">Mobile Number *</label>
+                                <input type="tel" id="mobileNumber" name="mobileNumber" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsappNumber">WhatsApp Number</label>
+                                <input type="tel" id="whatsappNumber" name="whatsappNumber">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="schoolName">School Name *</label>
+                                <input type="text" id="schoolName" name="schoolName" value="Red Rose Sr. Sec. School" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email (Optional)</label>
+                                <input type="email" id="email" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="address">Complete Address *</label>
+                            <textarea id="address" name="address" rows="3" required></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="category">Category/Subject *</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Select Category</option>
+                                    <option>Mathematics</option>
+                                    <option>Science</option>
+                                    <option>English</option>
+                                    <option>Hindi</option>
+                                    <option>Social Studies</option>
+                                    <option>General Knowledge</option>
+                                    <option>Technology</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group file-group">
+                            <label for="photo">Upload Photo (Optional)</label>
+                            <input type="file" id="photo" name="photo" accept="image/*">
+                            <small>Max file size: 5MB</small>
+                        </div>
+
+                        <div class="form-group file-group">
+                            <label for="certificate">Upload Certificate (Optional)</label>
+                            <input type="file" id="certificate" name="certificate" accept=".pdf,.doc,.docx,.jpg,.png">
+                            <small>Proof of previous achievements</small>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit Registration</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <img src="assets/images/logo/logo.jpg" alt="Red Rose School Logo" class="footer-logo">
+                    <p>Red Rose Sr. Sec. School is committed to providing quality education with discipline, innovation, technology and moral values.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="teachers.html">Teachers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="apply-job.html">Careers</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="#">Downloads</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Deshwali colony islampura masjid Makrana, Rajasthan</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+                    <p><i class="fa-solid fa-envelope"></i> info@redroseschool.com</p>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom">
+                <p>© 2026 Red Rose Sr. Sec. School. All Rights Reserved.</p>
+                <p>Designed & Developed with ❤️ for Quality Education</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/navbar.js" defer></script>
+    <script>
+        document.getElementById('competitionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const data = {
+                studentName: document.getElementById('studentName').value,
+                fatherName: document.getElementById('fatherName').value,
+                class: document.getElementById('studentClass').value,
+                section: document.getElementById('section').value,
+                mobile: document.getElementById('mobileNumber').value,
+                school: document.getElementById('schoolName').value,
+                category: document.getElementById('category').value,
+                address: document.getElementById('address').value
+            };
+            const message = `Competition Registration - Student: ${data.studentName}, Father: ${data.fatherName}, Class: ${data.class}-${data.section}, Category: ${data.category}, Mobile: ${data.mobile}`;
+            window.open(`https://wa.me/919876543210?text=${encodeURIComponent(message)}`, '_blank');
+        });
+    </script>
+</body>
+</html>
