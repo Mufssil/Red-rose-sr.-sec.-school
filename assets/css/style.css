@@ -335,32 +335,8 @@ header{
     display:flex;
 
     gap:15px;
-
 }
 
-.portal-btn{
-
-    padding:12px 24px;
-
-    border:2px solid #C62828;
-
-    border-radius:40px;
-
-    color:#C62828;
-
-    font-weight:600;
-
-    transition:.3s;
-
-}
-
-.portal-btn:hover{
-
-    background:#C62828;
-
-    color:#fff;
-
-}
 
 .admission-btn{
 
@@ -383,7 +359,7 @@ header{
     background:#8E0000;
 
 }
-.careers-btn{
+.job-btn{
 
     padding:12px 26px;
 
@@ -399,7 +375,7 @@ header{
 
 }
 
-.careers-btn:hover{
+.job-btn:hover{
 
     background:#8E0000;
 
